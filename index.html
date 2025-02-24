@@ -6,14 +6,36 @@
         <title>My Portfolio</title>
     </head>
     <body>
-        <div id="whole-page">
-            <div id="main-container">
-                <div class="box-container">
-                    <div class="item-container">
-                        <div class="item"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <header>
+            <nav>
+                <div class="left"></div>
+                <div class="middle"></div>
+                <div class="right"></div>
+            </nav>
+        </header>
+        <section id="short-about-me">
+
+        </section>
+        <div class="divider"></div>
+        <section id="tech-stack">
+
+        </section>
+        <div class="divider"></div>
+        <section id="projects">
+            <h2>Projects</h2>
+        </section>
+        <div class="divider"></div>
+        <section id="experience">
+
+        </section>
+        <footer>
+            <p>&copy;<span id="year"></span> Aaron Quiat. All Rights Reserved</p>
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById('year').textContent = new Date().getFullYear();
+            });
+        </script>
     </body>
 </html>
