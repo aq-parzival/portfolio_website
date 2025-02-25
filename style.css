@@ -1,0 +1,9 @@
+body {
+    background-color: #111111;
+    color: #ebebeb;
+    font-size: 125%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: block;
+}
