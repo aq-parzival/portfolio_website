@@ -1,3 +1,11 @@
+:root {
+    --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+    --color-subtext: #888888;
+}
+
+
+/* MAIN LAYOUT STUFF */
 body {
     background-color: #111111;
     color: #ebebeb;
@@ -8,14 +16,34 @@ body {
     display: block;
 }
 
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
 .content {
+    margin-bottom: 2rem;
     max-width: 60rem;
     margin: 0 auto;
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     margin-top: 4rem;
     line-height: 1.3;
 }
 
+.content *:not(.custom):not(figure):not(img) {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* NAV */
 .site-header {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -36,7 +64,7 @@ body {
     color: white;
 }
 
-.site-nav logo {
+.site-nav .logo {
     font-weight: bold;
     padding-left: 0;
 }
@@ -47,4 +75,41 @@ body {
     margin: 0;
     padding: 0;
     font-size: 18px;
+}
+
+
+/* OTHERS */
+.card {
+    padding: 20px;
+    border: 1px solid #27272a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    color: white;
+}
+
+#name-socials-location {
+    gap: 0.25rem;
+    flex-direction: column;
+    display: flex;
+}
+
+#name-social {
+    gap: 0.5rem;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+}
+
+.name-card {
+    margin: 0 !important;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+}
+
+#socials {
+    gap: 0.5rem;
+    justify-content: flex-end;
+    display: flex;
 }
