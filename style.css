@@ -7,3 +7,16 @@ body {
     padding-right: 1rem;
     display: block;
 }
+
+.site-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.site-nav {
+    display: flex;
+    max-width: 80rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-family: var(--font-mono);
+}
