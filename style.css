@@ -161,3 +161,25 @@ section h1::after {
     justify-content: flex-end;
     display: flex;
 }
+
+#socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-border);
+    color: var(--color-text);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#socials a:hover {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+#para-abt-me {
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
