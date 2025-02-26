@@ -183,3 +183,40 @@ section h1::after {
     margin-top: 1.5rem;
     line-height: 1.6;
 }
+
+
+/* TECH STACK */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    height:90px;
+    width: 100px;
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+}
+
+.tech-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:60px;
+}
