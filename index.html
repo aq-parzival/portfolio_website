@@ -1,19 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr" class="dark">
     <head>
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Computer Science Graduate - Aaron Quiat">
+        <meta name="keywords" content="Web development, portfolio, projects, experience">
+        <meta name="author" content="Aaron Quiat">
+        <link rel="stylesheet" href="style.css">
         <title>My Portfolio</title>
     </head>
     <body>
-        <div id="whole-page">
-            <div id="main-container">
-                <div class="box-container">
-                    <div class="item-container">
-                        <div class="item"></div>
+        <header class="site-header">
+            <nav class="site-nav">
+                <a href="#" class="logo">Aaron Quiat</a>
+                <ul class="main-menu">
+                    <li><a>About</a></li>
+                    <li><a>My work</a></li>
+                    <li><a>Projects</a></li>
+                    <li><a>Contact Me</a></li>
+                </ul>
+                <ul class="main-menu"><li><a>Prince</a></li></ul>
+            </nav>
+        </header>
+        <main class="content">
+            <section id="about" class="card">
+                <div id="name-socials-location">
+                    <div id="name-social">
+                        <h1 class="name-card">Aaron Quiat</h1>
+                        <div id="socials">
+                            <a href="" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
                     </div>
+                    
                 </div>
-            </div>
-        </div>
+                <div id="para-abt-me">
+                    <p>LOL</p>
+                    <p>TS PMO ICL</p>
+                </div>
+            </section>
+            
+            <section id="tech-stack">
+                <h1>What I work with</h1>
+            </section>
+    
+            <section id="projects">
+                <h1>Projects</h1>
+            </section>
+    
+            <section id="experience">
+                <h1>Experience</h1>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;<span id="year"></span> Aaron Quiat. All Rights Reserved</p>
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById('year').textContent = new Date().getFullYear();
+            });
+        </script>
     </body>
 </html>
