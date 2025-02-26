@@ -366,3 +366,49 @@ section h1::after {
     color: var(--color-subtext);
     margin-bottom: 1rem;
 }
+
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--color-subtext);
+    border-top: 1px solid var(--color-border);
+    margin-top: 4rem;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    body {
+        font-size: 100%;
+    }
+
+    .site-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-menu {
+        margin-top: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #name-social {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    #socials {
+        justify-content: flex-start;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+}
