@@ -159,7 +159,7 @@ section h1::after {
 #socials {
     gap: 0.5rem;
     display: flex;
-    margin-left: auto;
+    margin: auto 0;
 }
 
 #socials a {
@@ -177,16 +177,6 @@ section h1::after {
 #socials a:hover {
     background-color: var(--color-accent);
     color: white;
-}
-
-.location {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-text-opacity));
-    margin-top: 0.25rem;
-    font-size: 0.875rem;
 }
 
 #para-abt-me {
