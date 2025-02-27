@@ -404,7 +404,7 @@ footer {
     }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 350px) {
     #name-social {
         flex-direction: column;
         align-items: flex-start;
