@@ -159,6 +159,7 @@ section h1::after {
 #socials {
     gap: 0.5rem;
     display: flex;
+    margin: auto 0;
 }
 
 #socials a {
@@ -394,6 +395,16 @@ footer {
         flex-wrap: wrap;
     }
 
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+}
+
+@media (max-width: 350px) {
     #name-social {
         flex-direction: column;
         align-items: flex-start;
@@ -402,13 +413,5 @@ footer {
 
     #socials {
         justify-content: flex-start;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .timeline::after {
-        left: 31px;
     }
 }
